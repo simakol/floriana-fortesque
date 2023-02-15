@@ -11,9 +11,153 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body>
+<body id="top">
+    <a href="#top" class="arrow-up" id="arrowUp"><img src="./images/logos/arrow-up.svg" alt="arrow up"></a>
+    <header>
+        <div class="container">
+            <a href="#top"><img src="./images/logos/logo.svg" alt="ice-cream" width="176" height="201"></a>
+            <a href="#subscribe" class="subscribe">Subscribe</a>
+        </div>
+        <div class="navbar-borders">
+            <nav class="container navbar-menu flex-between"><a href="#about">About us</a><a href="#flavors">Flavors of
+                    an ice
+                    cream</a><a href="#prices">Prices</a><a href="#contancUs">Contact us</a></nav>
+        </div>
+    </header>
+    <section class="container hero flex-between">
+        <div class="properties">
+            <p class="properties-item">100% <br>natural</p>
+            <p class="properties-item">Only selected ingredients</p>
+            <p class="properties-item">No semi-finished products</p>
+        </div>
+        <img src="images/ice-cream.png" alt="ice-cream">
+        <div class="properties">
+            <p class="properties-item">No preservatives</p>
+            <p class="properties-item">Official
+                production</p>
+            <p class="properties-item">Thousands
+                of satisfied customers</p>
+        </div>
+    </section>
 
+    <section class="subscribe-section" id="subscribe">
+        <div class="container flex-between-start">
+            <div class="subscribe-titles">
+                <h2>KEEP IN TOUCH WITH US</h2>
+                <h3>receive news first</h3>
+            </div>
+            <div class="after-submit-modal" id="afterSubmitModal">
+                <h3>Well - done!</h3>
+                <p>Now you can receive news about our cafe and try something new first!</p>
+            </div>
+            <form class="subscribe-form active" id="subscribeForm">
+                <input type="text" placeholder="Full name" name="name" required>
+                <input type="email" placeholder="E-mail" name="email" required>
+                <button type="submit">ACCEPT</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="about-us container" id="about">
+        <h2 class="section-title">About us</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p class="about-text">
+                        Floriana Fortesque - it's 100% natural and high-quality ice cream. History of our brand goes
+                        back to
+                        1994 in picturesque Kyiv city. From that time our family have been working in the sphere of
+                        production of the real ice cream. All these years we continue to develop and create new recipes
+                        of
+                        an ice cream.
+                    </p>
+                    <img class="slide-img" src="./images/logos/ice-cream-1.svg" alt="ice-cream">
+                </div>
+                <div class="swiper-slide">
+                    <p class="about-text">
+                        All the ice cream we make is natural for 100%, as we make it from the very beginning. No bases,
+                        stabilizing bases, flavorings or semi-finished products are used for production. Only selected
+                        ingredients enter the ice cream. This is why we are confident in the quality of our ice cream.
+                    </p>
+                    <img class="slide-img" src="./images/logos/ice-cream-2.svg" alt="ice-cream">
+                </div>
+                <div class="swiper-slide">
+                    <p class="about-text">
+                        With our help you can get to know, fall in love and get high from different flavors of natural
+                        ice cream, the range of which will constantly change, grow and surprise you.
+                    </p>
+                    <img class="slide-img" src="./images/logos/ice-cream-3.svg" alt="ice-cream">
+                </div>
+            </div>
+
+            <img class="swiper-prev" src="./images/logos/arrow.svg" alt="arrow">
+            <img class="swiper-next" src="./images/logos/arrow.svg" alt="arrow">
+
+        </div>
+    </section>
+
+    <section class="container flavors-section" id="flavors">
+        <h2 class="section-title">Flavors of an ice cream</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper" id="iceCreamSlider">
+            </div>
+
+            <img class="swiper-prev" src="./images/logos/arrow.svg" alt="arrow">
+            <img class="swiper-next" src="./images/logos/arrow.svg" alt="arrow">
+
+        </div>
+        <div class="distributors">
+            <h4>Distributors:</h4>
+            <ul class="distributors-list" id="distributorsList"></ul>
+        </div>
+    </section>
+
+    <section class="container prices-section" id="prices">
+        <h2 class="section-title">Prices</h2>
+        <div class="flex-between-start">
+            <ul class="prices-list">
+                <li>For 1 ball: 20 UAH</li>
+                <li>For 2 balls: 35 UAH</li>
+                <li>For 3 balls: 45 UAH</li>
+                <br>
+                <li>Waffle: 5 UAH</li>
+                <li>Paper cup: 15 UAH</li>
+                <br>
+                <li>Additional syrups: 5 UAH</li>
+            </ul>
+            <img src="./images/ice-cream-2.png" alt="ice-cream">
+        </div>
+    </section>
+
+    <section class="container contact-section" id="contancUs">
+        <h2 class="section-title">Contact us</h2>
+        <div class="contact-item">
+            <h4>Text us using our e-mail:</h4>
+            <a href="mailto:florianafortesque@gmail.com">florianafortesque@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <h4>You can find us by address:</h4>
+            <p>Shopping mall “Dream Town” 2nd floor, Paris section</p>
+        </div>
+        <div class="contact-item">
+            <h4>Call us using our telephone:</h4>
+            <a href="tel:+38 (093) 42 - 083 - 7189">+38 (093) 42 - 083 - 7189</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Looking forward to see you in our cafe!</p>
+        <img src="./images/ice-cream-3.png" alt="ice-cream">
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/distributors.js"></script>
+    <script src="scripts/ice-cream.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
