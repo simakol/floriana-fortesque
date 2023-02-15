@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --text-selected-color: #ada2ff;
+  --text-main-color: #98a8f8;
+  --bg-main-color: #fff8e1;
+  --bg-selected-color: #ffe5f1;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
