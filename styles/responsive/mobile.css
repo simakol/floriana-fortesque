@@ -1,0 +1,228 @@
+body.open {
+  position: fixed;
+  overflow: hidden;
+}
+
+.flex-between {
+  flex-wrap: wrap;
+}
+/* header start */
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-borders {
+  padding: 0;
+  border: none;
+}
+
+.subscribe {
+  display: none;
+}
+
+.subscribe-nav {
+  display: inline-block;
+}
+
+.burger-menu {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  z-index: 1000;
+  right: 0;
+  top: 20%;
+}
+
+.burger-menu-bar {
+  position: relative;
+  border-radius: 15px;
+  height: 10px;
+  margin-top: 5px;
+  background-color: var(--text-selected-color);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.burger-menu.open > .burger-menu-bar:nth-child(1) {
+  transform: rotate(40deg) translateY(18px);
+}
+.burger-menu.open > .burger-menu-bar:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu.open > .burger-menu-bar:nth-child(3) {
+  transform: rotate(-40deg) translateY(-20px);
+}
+
+.navbar-menu {
+  transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: fixed;
+  z-index: 999;
+  height: 0;
+  width: 100vw;
+  top: -100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.navbar-menu.open {
+  top: 0;
+  height: 100%;
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar-menu > a:not(:last-child) {
+  margin-right: 0;
+}
+
+/* header end */
+
+/* hero start */
+.hero > img {
+  display: none;
+}
+.properties {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+.properties-item {
+  display: inline-block;
+  font-size: 22px;
+  width: 150px;
+  height: 150px;
+  margin: 3px;
+  padding: 45px 5px;
+}
+/* hero end */
+
+/* subscribe start */
+.subscribe-section {
+  padding: 100px 0;
+}
+
+.subscribe-section > .flex-between-start {
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-titles {
+  width: 100%;
+}
+
+.subscribe-titles h2 {
+  font-size: 60px;
+}
+.subscribe-titles h3 {
+  font-size: 35px;
+}
+.subscribe-form {
+  width: 98%;
+}
+.after-submit-modal {
+  width: 90%;
+  margin-top: 30px;
+}
+.after-submit-modal > h3 {
+  font-size: 55px;
+}
+.after-submit-modal > p {
+  font-size: 40px;
+}
+/* subscribe end */
+
+/* about us start */
+
+.swiper {
+  margin-top: 50px;
+}
+.about-text {
+  padding: 0 70px;
+  font-size: 40px;
+}
+
+.slide-img {
+  transform: translateX(200px);
+  width: 20%;
+  height: auto;
+}
+
+/* about us end */
+
+/* flavors start */
+
+.flavour-description {
+  padding-top: 130px;
+  width: 60%;
+}
+
+.ice-cream-slide > img {
+  transform: translateX(70px);
+  width: 30%;
+  height: auto;
+}
+
+.flavour-description > h3 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.flavour-description > p {
+  font-size: 25px;
+  width: 100%;
+}
+.distributors {
+  font-size: 20px;
+}
+/* flavors end */
+
+/* prices start */
+.prices-section img {
+  display: none;
+}
+
+.prices-list {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* prices end */
+
+/* contact start */
+.contact-section {
+  margin-top: 50px;
+}
+
+.contact-item {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contact-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.contact-item:nth-child(odd) {
+  transform: translateX(0);
+}
+/* contact end */
+
+/* footer start */
+footer > p {
+  font-size: 45px;
+}
+/* footer end */
